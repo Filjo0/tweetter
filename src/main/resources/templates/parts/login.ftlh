@@ -1,3 +1,4 @@
+
 <#macro login path isRegisterForm>
 <form action="${path}" method="post">
     <div class="form-group row">
@@ -66,15 +67,13 @@
     </#if>
     <input type="hidden" name="_csrf" value="${_csrf.token}"/>
     <#if !isRegisterForm> <a href="/registration">Add new user</a></#if>
-<button class="btn btn-primary" type="submit""><#if isRegisterForm>Create<#else>Sign in</#if></button>
+    <button class="btn btn-primary" type="submit""><#if isRegisterForm>Create<#else>Sign in</#if></button>
 </form>
 </#macro>
 
 <#macro logout>
-<#if user?? && name!="unknown">
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-    <button class="btn btn-primary" type="submit">Sign Out</button>
+    <button class="btn btn-primary" type="submit"><#if user??>Sign Out<#else>Log in</#if></button>
 </form>
-</#if>
 </#macro>
