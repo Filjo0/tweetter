@@ -1,0 +1,1 @@
+web: java -jar target/weetter-1.0-SNAPSHOT.jar
