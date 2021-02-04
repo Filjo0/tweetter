@@ -1,2 +1,3 @@
-delete from message;
+delete
+from message;
 

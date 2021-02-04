@@ -1,52 +1,53 @@
 <#macro page>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Weetter</title>
-    <link rel="stylesheet" href="/static/style.css"/>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Weetter</title>
+        <link rel="stylesheet" href="/static/style.css"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/d69393c429.js" crossorigin="anonymous"></script>
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/d69393c429.js" crossorigin="anonymous"></script>
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous"/>
 
-    <!--Captcha-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!--Captcha-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <!--  Turbolinks  -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js'></script>
-    <style>
-        .turbolinks-progress-bar {
-        height: 2px;
-        background-color: grey;
-        }
+        <!--  Turbolinks  -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js'></script>
+        <style>
+            .turbolinks-progress-bar {
+                height: 2px;
+                background-color: grey;
+            }
 
-    </style>
+        </style>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script defer src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
-            integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script defer src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
+                integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'
+                crossorigin='anonymous'></script>
+        <script defer src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+                integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+                crossorigin='anonymous'></script>
+
+
+    </head>
+    <body>
+    <#include "navbar.ftlh">
+    <div class="container mt-5">
+        <#nested>
+    </div>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
+            integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
             crossorigin='anonymous'></script>
-    <script defer src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
-            integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
-            crossorigin='anonymous'></script>
-
-
-</head>
-<body>
-<#include "navbar.ftlh">
-<div class="container mt-5">
-    <#nested>
-</div>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
-        integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
-        crossorigin='anonymous'></script>
-</body>
-</html>
+    </body>
+    </html>
 </#macro>

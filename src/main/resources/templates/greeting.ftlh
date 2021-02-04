@@ -3,7 +3,7 @@
 
 <@c.page>
 
-<h5>Hello guest</h5>
-<div>Welcome to our simple clone of Twitter</div>
+    <h5>Hello guest</h5>
+    <div>Welcome to our simple clone of Twitter</div>
 
 </@c.page>
