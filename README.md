@@ -1,4 +1,4 @@
-# weetter
+# tweetter
 A Spring-based project, simple clone of Twitter
 
 ### This web-app allows user to:
